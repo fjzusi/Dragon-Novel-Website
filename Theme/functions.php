@@ -105,9 +105,9 @@ add_action( 'widgets_init', 'novel_dragon_widgets_init' );
  * Enqueue scripts and styles.
  */
 function novel_dragon_scripts() {
-  wp_enqueue_style( 'novel-dragon-bootstrap', get_template_directory_uri() . '/css/vendor/bootstrap.min.css', array(), '20151215', true );
-  wp_enqueue_style( 'novel-dragon-bootstrap-theme', get_template_directory_uri() . '/css/vendor/bootstrap-theme.min.css', array(), '20151215', true );
-  wp_enqueue_style( 'novel-dragon-bootstrap-theme', get_template_directory_uri() . '/css/vendor/normalize.css', array(), '20151215', true );
+  wp_enqueue_style( 'novel-dragon-bootstrap', get_template_directory_uri() . '/css/vendor/bootstrap.min.css', array(), '20151215', 'all' );
+  wp_enqueue_style( 'novel-dragon-bootstrap-theme', get_template_directory_uri() . '/css/vendor/bootstrap-theme.min.css', array(), '20151215', 'all' );
+  wp_enqueue_style( 'novel-dragon-bootstrap-theme', get_template_directory_uri() . '/css/vendor/normalize.css', array(), '20151215', 'all' );
 	wp_enqueue_style( 'novel-dragon-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'novel-dragon-modernizer', get_template_directory_uri() . '/js/vendor/modernizr-2.8.3.min.js', array(), '20151215', true );
