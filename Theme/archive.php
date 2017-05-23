@@ -4,12 +4,12 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Novel_Dragon
+ * @package WP_Bootstrap_Starter
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area col-sm-12 col-md-8">
 		<main id="main" class="site-main" role="main">
 
 		<?php
