@@ -15,9 +15,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'novel-dragon' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'novel-dragon' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'novel-dragon' ), 'novel-dragon', '<a href="https://automattic.com/" rel="designer">Underscores.me</a>' ); ?>
+			Copyright (c) 2013 Lyndsey Luther - All Rights Reserved<br>
+      Contents of this site including text and media may not be reproduced without prior written consent<br>
+      Elements of this site are property of their respective owners and are used with permission
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

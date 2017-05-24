@@ -7,9 +7,10 @@
  * @package Novel_Dragon
  */
 
-get_header(); ?>
+get_header();
+get_sidebar();?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area col-xs-12 col-sm-9">
 		<main id="main" class="site-main" role="main">
 
 		<?php
@@ -31,5 +32,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

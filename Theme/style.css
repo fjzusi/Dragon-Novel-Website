@@ -98,6 +98,32 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+	background-color: #DFE4E8;
+}
+
+.site-info {
+	text-align: center;
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+.post, .type-page {
+	background-color: #DDDDDD;
+	background-image: url(../README/img/content-swirl.png);
+	background-position: right 98%;
+	background-repeat: no-repeat;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px 10px 30px 10px;
+}
+
+#secondary section {
+	background-color: #E8EFF9;
+	border: 1px solid black;
+	margin-bottom: 10px;
+	padding: 10px;
+   
 /* ==========================================================================
    Bootstrap Overrides
    ========================================================================== */
