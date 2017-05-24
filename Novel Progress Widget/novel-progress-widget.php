@@ -128,7 +128,7 @@ class novel_progress_widget extends WP_Widget {
 		echo $before_widget;
 
 		echo '<div class="wp_widget_plugin_box novel-progress-widget">';
-		echo '<img src="wp-content/themes/novel-dragon/image/sidebar/currentProjects.png" alt="Current Projects" />';
+		echo '<img src="wp-content/themes/novel-dragon-mobile/img/current-projects.png" alt="Current Projects" />';
 		echo '<table class="progressTable">';
 		
 		if($title1) {
@@ -140,7 +140,7 @@ class novel_progress_widget extends WP_Widget {
 			
 			echo '<tr>';
 			echo '<td class="projectProgress">';
-			echo '<img src="wp-content/themes/novel-dragon/image/sidebar/progressSeed.png" />';
+			echo '<img src="wp-content/themes/novel-dragon-mobile/img/progress-seed.png" />';
 			echo '<div class="progressImage" style="width: ' . $percent1 . '%;"></div>';
 			echo '</td>';
 			echo '</tr>';
@@ -161,7 +161,7 @@ class novel_progress_widget extends WP_Widget {
 			
 			echo '<tr>';
 			echo '<td class="projectProgress">';
-			echo '<img src="wp-content/themes/novel-dragon/image/sidebar/progressSeed.png" />';
+			echo '<img src="wp-content/themes/novel-dragon-mobile/img/progress-seed.png" />';
 			echo '<div class="progressImage" style="width: ' . $percent2 . '%;"></div>';
 			echo '</td>';
 			echo '</tr>';
@@ -182,7 +182,7 @@ class novel_progress_widget extends WP_Widget {
 			
 			echo '<tr>';
 			echo '<td class="projectProgress">';
-			echo '<img src="wp-content/themes/novel-dragon/image/sidebar/progressSeed.png" />';
+			echo '<img src="wp-content/themes/novel-dragon-mobile/img/progress-seed.png" />';
 			echo '<div class="progressImage" style="width: ' . $percent3 . '%;"></div>';
 			echo '</td>';
 			echo '</tr>';
@@ -203,7 +203,7 @@ class novel_progress_widget extends WP_Widget {
 			
 			echo '<tr>';
 			echo '<td class="projectProgress">';
-			echo '<img src="wp-content/themes/novel-dragon/image/sidebar/progressSeed.png" />';
+			echo '<img src="wp-content/themes/novel-dragon-mobile/img/progress-seed.png" />';
 			echo '<div class="progressImage" style="width: ' . $percent4 . '%;"></div>';
 			echo '</td>';
 			echo '</tr>';
@@ -224,7 +224,7 @@ class novel_progress_widget extends WP_Widget {
 			
 			echo '<tr>';
 			echo '<td class="projectProgress">';
-			echo '<img src="wp-content/themes/novel-dragon/image/sidebar/progressSeed.png" />';
+			echo '<img src="wp-content/themes/novel-dragon-mobile/img/progress-seed.png" />';
 			echo '<div class="progressImage" style="width: ' . $percent5 . '%;"></div>';
 			echo '</td>';
 			echo '</tr>';
