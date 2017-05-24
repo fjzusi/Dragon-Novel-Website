@@ -63,12 +63,14 @@ class Dragon_Novel_Walker_Nav_Menu extends Walker_Nav_Menu {
     }
     
     $list_attributes = "";
+    $dropdown_caret = "";
     if($this->has_children) {
       $list_attributes = " class=\"dropdown\" ";
       $attributes .= " class=\"dropdown-toggle\" data-toggle=\"dropdown\" ";
+      $dropdown_caret = "<span class=\"caret\"></span>";
     }
     
-    $output .= "<li $list_attributes><a $attributes>$title</a>";
+    $output .= "<li $list_attributes><a $attributes>$title $dropdown_caret</a>";
   }
   
   public function end_el( &$output, $item, $depth = 0, $args = array() ) {
