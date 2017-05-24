@@ -123,6 +123,47 @@ body {
 	border: 1px solid black;
 	margin-bottom: 10px;
 	padding: 10px;
+}
+
+.novel-progress-widget {
+	text-align: center;
+}
+
+.progressTable {
+	text-align: left;
+}
+
+.projectTitle {
+	font-weight: bold;
+	padding-left: 3px;
+	padding-bottom: 5px;
+}
+
+.projectProgress img {
+	position: absolute;
+}
+
+.progressImage {
+	height: 24px;
+	background-image: url(../novel-dragon-mobile/img/progress-vine.png);
+	background-repeat: no-repeat;
+}
+
+.projectPercent {
+	text-align: right;
+	font-size: 14px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+}
+
+.widget_text {
+	text-align: center;
+}
+
+.widget_text img {
+	display: block;
+	margin: auto;
+}
    
 /* ==========================================================================
    Bootstrap Overrides
