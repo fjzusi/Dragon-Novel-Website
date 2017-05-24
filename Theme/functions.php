@@ -8,6 +8,82 @@
  */
 
 if ( ! function_exists( 'novel_dragon_setup' ) ) :
+
+class Dragon_Novel_Walker_Nav_Menu extends Walker_Nav_Menu {
+  
+  public function start_lvl(&$output, $depth = 0, $args = array()) {
+    if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
+      $t = '';
+      $n = '';
+    } else {
+      $t = "\t";
+      $n = "\n";
+    }
+    $indent = str_repeat( $t, $depth );
+    
+    if($depth == 0) {
+      $output .= "{$n}{$indent}<ul class=\"sub-menu dropdown-menu\">{$n}";
+    } else {
+      $output .= "{$n}{$indent}<ul class=\"sub-menu dropdown-menu\">{$n}";
+    }
+  }
+  
+  public function end_lvl( &$output, $depth = 0, $args = array() ) {
+    if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
+      $t = '';
+      $n = '';
+    } else {
+      $t = "\t";
+      $n = "\n";
+    }
+    $indent = str_repeat( $t, $depth );
+    $output .= "$indent</ul>{$n}";
+  }
+  
+  public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+    $args = apply_filters( 'nav_menu_item_args', $args, $item, $depth );
+    
+    $atts = array();
+    $atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : '';
+    $atts['target'] = ! empty( $item->target )     ? $item->target     : '';
+    $atts['rel']    = ! empty( $item->xfn )        ? $item->xfn        : '';
+    $atts['href']   = ! empty( $item->url )        ? $item->url        : '';
+
+    $atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args, $depth );
+    
+    $title = apply_filters( 'the_title', $item->title, $item->ID );
+    $title = apply_filters( 'nav_menu_item_title', $title, $item, $args, $depth );
+    
+    $attributes = "";
+    foreach($atts as $attr => $value) {
+      if(!empty($value)) {
+        $value = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
+        $attributes .= ' ' . $attr . '="' . $value . '"';
+      }
+    }
+    
+    $list_attributes = "";
+    if($this->has_children) {
+      $list_attributes = " class=\"dropdown\" ";
+      $attributes .= " class=\"dropdown-toggle\" data-toggle=\"dropdown\" ";
+    }
+    
+    $output .= "<li $list_attributes><a $attributes>$title</a>";
+  }
+  
+  public function end_el( &$output, $item, $depth = 0, $args = array() ) {
+    if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
+      $t = '';
+      $n = '';
+    } else {
+      $t = "\t";
+      $n = "\n";
+    }
+    $indent = str_repeat( $t, $depth );
+    $output .= "</li>{$n}";
+  }
+}
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
