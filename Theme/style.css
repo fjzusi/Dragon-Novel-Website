@@ -100,6 +100,8 @@ textarea {
 
 body {
 	background-color: #DFE4E8;
+	color: black;
+	font-family: "Book Antiqua", serif;
 }
 
 .site-info {
@@ -116,6 +118,9 @@ body {
 	border: 1px solid black;
 	border-radius: 5px;
 	padding: 10px 10px 30px 10px;
+	margin-bottom: 10px;
+	min-height: 150px;
+	font-size: 18px;
 }
 
 #secondary section {
@@ -123,6 +128,7 @@ body {
 	border: 1px solid black;
 	margin-bottom: 10px;
 	padding: 10px;
+	border-radius: 5px;
 }
 
 .novel-progress-widget {
@@ -168,12 +174,40 @@ body {
 #primary {
 	margin-bottom: 10px;
 }
+
+.entry-title {
+	font-weight: bold;
+	font-size: 20px;
+	margin: 0;
+	text-decoration: underline;
+}
+
+.entry-title a {
+	color: black;
+}
+
+.byline, .updated {
+	display: none;
+}
+
+.posted-on, .byline {
+	text-align: left;
+	font-style: italic;
+	font-size: 12px;
+}
+
+.posted-on a {
+	text-decoration: none;
+	color: black;
+}
    
 /* ==========================================================================
    Bootstrap Overrides
    ========================================================================== */
 
-
+.navbar-default {
+	font-weight: bold;
+}
 
 /* ==========================================================================
    Helper classes
