@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Novel Progress Widget
+Plugin Name: Novel Progress Widget 2
 Plugin URI: http://www.google.com/
 Description: Display the progress of your novels
 Version: 1.0
@@ -10,9 +10,9 @@ License: GPL2
 */
 ?>
 <?php
-class novel_progress_widget extends WP_Widget {
-	function novel_progress_widget() {
-		parent::WP_Widget(false, $name = __('Novel Progress Widget', 'wp_widget_plugin'));
+class novel_progress_widget_2 extends WP_Widget {
+	function novel_progress_widget_2() {
+		parent::WP_Widget(false, $name = __('Novel Progress Widget 2', 'wp_widget_plugin'));
 	}
 	
 	function form($instance) {
@@ -244,5 +244,5 @@ class novel_progress_widget extends WP_Widget {
 }
 
 // register the widget
-add_action('widgets_init', create_function('', 'return register_widget("novel_progress_widget");'));
+add_action('widgets_init', create_function('', 'return register_widget("novel_progress_widget_2");'));
 ?>
