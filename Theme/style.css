@@ -1,5 +1,5 @@
 /*
-Theme Name: Novel Dragon
+Theme Name: Novel Dragon Mobile
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -7,7 +7,7 @@ Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: novel-dragon
+Text Domain: novel-dragon-mobile
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
@@ -200,6 +200,23 @@ body {
 .posted-on a {
 	text-decoration: none;
 	color: black;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
 }
    
 /* ==========================================================================
