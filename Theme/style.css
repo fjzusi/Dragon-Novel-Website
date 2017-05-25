@@ -123,6 +123,11 @@ body {
 	font-size: 18px;
 }
 
+#main img {
+	max-width: 100%;
+	height: auto;
+}
+
 #secondary section {
 	background-color: #E8EFF9;
 	border: 1px solid black;
@@ -213,6 +218,7 @@ body {
 	float: left;
 	margin-right: 1.5em;
 }
+
 .alignright {
 	display: inline;
 	float: right;
