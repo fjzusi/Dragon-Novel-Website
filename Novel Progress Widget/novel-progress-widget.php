@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Novel Progress Widget 2
-Plugin URI: http://www.google.com/
+Plugin URI: https://github.com/joedono/Dragon-Novel-Website
 Description: Display the progress of your novels
 Version: 1.0
 Author: Joe Zusi
@@ -14,7 +14,7 @@ class novel_progress_widget_2 extends WP_Widget {
 	function novel_progress_widget_2() {
 		parent::WP_Widget(false, $name = __('Novel Progress Widget 2', 'wp_widget_plugin'));
 	}
-	
+
 	function form($instance) {
 		if($instance) {
 			$title1 = esc_attr($instance['title1']);
@@ -22,7 +22,7 @@ class novel_progress_widget_2 extends WP_Widget {
 			$title3 = esc_attr($instance['title3']);
 			$title4 = esc_attr($instance['title4']);
 			$title5 = esc_attr($instance['title5']);
-			
+
 			$percent1 = esc_attr($instance['percent1']);
 			$percent2 = esc_attr($instance['percent2']);
 			$percent3 = esc_attr($instance['percent3']);
@@ -34,14 +34,14 @@ class novel_progress_widget_2 extends WP_Widget {
 			$title3 = '';
 			$title4 = '';
 			$title5 = '';
-			
+
 			$percent1 = '';
 			$percent2 = '';
 			$percent3 = '';
 			$percent4 = '';
 			$percent5 = '';
 		}
-		
+
 		?>
 		<table class="novel-progress-widget-table">
 			<tr>
@@ -91,53 +91,53 @@ class novel_progress_widget_2 extends WP_Widget {
 		</table>
 		<?php
 	}
-	
+
 	function update($new_instance, $old_instance) {
 		$instance = $old_instance;
-		
+
 		$instance['title1'] = esc_attr($new_instance['title1']);
 		$instance['title2'] = esc_attr($new_instance['title2']);
 		$instance['title3'] = esc_attr($new_instance['title3']);
 		$instance['title4'] = esc_attr($new_instance['title4']);
 		$instance['title5'] = esc_attr($new_instance['title5']);
-		
+
 		$instance['percent1'] = esc_attr($new_instance['percent1']);
 		$instance['percent2'] = esc_attr($new_instance['percent2']);
 		$instance['percent3'] = esc_attr($new_instance['percent3']);
 		$instance['percent4'] = esc_attr($new_instance['percent4']);
 		$instance['percent5'] = esc_attr($new_instance['percent5']);
-		
+
 		return $instance;
 	}
-	
+
 	function widget($args, $instance) {
 		extract($args);
-		
+
 		$title1 = esc_attr($instance['title1']);
 		$title2 = esc_attr($instance['title2']);
 		$title3 = esc_attr($instance['title3']);
 		$title4 = esc_attr($instance['title4']);
 		$title5 = esc_attr($instance['title5']);
-		
+
 		$percent1 = esc_attr($instance['percent1']);
 		$percent2 = esc_attr($instance['percent2']);
 		$percent3 = esc_attr($instance['percent3']);
 		$percent4 = esc_attr($instance['percent4']);
 		$percent5 = esc_attr($instance['percent5']);
-		
+
 		echo $before_widget;
 
 		echo '<div class="wp_widget_plugin_box novel-progress-widget">';
 		echo '<img src="' . get_template_directory_uri() . '/img/current-projects.png" alt="Current Projects" />';
 		echo '<table class="progressTable">';
-		
+
 		if($title1) {
 			echo '<tr>';
 			echo '<td class="projectTitle">';
 			echo $title1;
 			echo '</td>';
 			echo '</tr>';
-			
+
 			echo '<tr>';
 			echo '<td class="projectProgress">';
 			echo '<img src="' . get_template_directory_uri() . '/img/progress-seed.png" />';
@@ -151,14 +151,14 @@ class novel_progress_widget_2 extends WP_Widget {
 			echo '</td>';
 			echo '</tr>';
 		}
-		
+
 		if($title2) {
 			echo '<tr>';
 			echo '<td class="projectTitle">';
 			echo $title2;
 			echo '</td>';
 			echo '</tr>';
-			
+
 			echo '<tr>';
 			echo '<td class="projectProgress">';
 			echo '<img src="' . get_template_directory_uri() . '/img/progress-seed.png" />';
@@ -172,14 +172,14 @@ class novel_progress_widget_2 extends WP_Widget {
 			echo '</td>';
 			echo '</tr>';
 		}
-		
+
 		if($title3) {
 			echo '<tr>';
 			echo '<td class="projectTitle">';
 			echo $title3;
 			echo '</td>';
 			echo '</tr>';
-			
+
 			echo '<tr>';
 			echo '<td class="projectProgress">';
 			echo '<img src="' . get_template_directory_uri() . '/img/progress-seed.png" />';
@@ -193,14 +193,14 @@ class novel_progress_widget_2 extends WP_Widget {
 			echo '</td>';
 			echo '</tr>';
 		}
-		
+
 		if($title4) {
 			echo '<tr>';
 			echo '<td class="projectTitle">';
 			echo $title4;
 			echo '</td>';
 			echo '</tr>';
-			
+
 			echo '<tr>';
 			echo '<td class="projectProgress">';
 			echo '<img src="' . get_template_directory_uri() . '/img/progress-seed.png" />';
@@ -214,14 +214,14 @@ class novel_progress_widget_2 extends WP_Widget {
 			echo '</td>';
 			echo '</tr>';
 		}
-		
+
 		if($title5) {
 			echo '<tr>';
 			echo '<td class="projectTitle">';
 			echo $title5;
 			echo '</td>';
 			echo '</tr>';
-			
+
 			echo '<tr>';
 			echo '<td class="projectProgress">';
 			echo '<img src="' . get_template_directory_uri() . '/img/progress-seed.png" />';
@@ -235,10 +235,10 @@ class novel_progress_widget_2 extends WP_Widget {
 			echo '</td>';
 			echo '</tr>';
 		}
-		
+
 		echo '</table>';
 		echo '</div>';
-		
+
 		echo $after_widget;
 	}
 }
